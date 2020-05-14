@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "lib": ["es2015"],
+    "module": "commonjs",
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "declaration": true,
+    "removeComments": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "outDir": "jsFiles",
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node", "cucumber", "chai", "chai-as-promised", "selenium-webdriver"]
+  },
+  "include": [
+    "pages/**/*",
+    "stepDefinations/**/*",
+    "config/**/*",
+    "commonFunctions/**/*",
+  ],
+  "exclude": [
+    "node_modules",
+    "jsFiles"
+  ]
+}
